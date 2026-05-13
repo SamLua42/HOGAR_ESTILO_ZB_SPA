@@ -1,0 +1,139 @@
+/* == CONTACTO ========================== */
+
+.contenedor-contacto {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 1000px;
+  margin: 60px auto 0 auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  background-color: #90D1CA;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.info-contacto {
+  background-color: #90D1CA;
+  color: #444;
+  flex: 1 1 40%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.info-contacto h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8em;
+  color: #077275;
+  margin-bottom: 15px;
+}
+
+.info-contacto p {
+  font-family: 'Barlow', sans-serif;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.redes p {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.contenedor-formulario {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto 60px auto;
+  border-radius: 0 0 15px 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.formulario {
+  padding: 40px;
+  background: white;
+}
+
+.formulario h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #444;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.formulario p {
+  font-family: 'Barlow', sans-serif;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.form-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.fila {
+  display: flex;
+  gap: 15px;
+}
+
+.fila input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #f8cdda;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  font-family: 'Barlow', sans-serif;
+  transition: border 0.3s, box-shadow 0.3s;
+  background-color: #fff;
+}
+
+.fila input:focus, textarea:focus {
+  border: 2px solid #90D1CA;
+  box-shadow: 0 0 8px rgba(144, 209, 202, 0.5);
+}
+
+textarea {
+  resize: vertical;
+}
+
+.Btn_Enviar {
+  background-color: #90D1CA;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  width: 100%;
+}
+
+.Btn_Enviar:hover {
+  background-color: #2F8F9D;
+  transform: scale(1.02);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .contenedor-contacto {
+    flex-direction: column;
+  }
+  .info-contacto {
+    flex: 1 1 100%;
+  }
+  .fila {
+    flex-direction: column;
+  }
+}

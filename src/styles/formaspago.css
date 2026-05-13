@@ -1,0 +1,289 @@
+/* == FORMAS DE PAGO ==================== */
+
+/* Hero */
+#FP_Hero {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 50px 80px;
+  background-color: #fdf9e6;
+}
+
+.FP_Hero_Icono i {
+  font-size: 100px;
+  color: #2F8F9D;
+}
+
+.FP_Hero_Texto h1 {
+  font-family: 'Barlow', sans-serif;
+  font-size: 280%;
+  font-weight: bold;
+  color: #2F8F9D;
+  margin-bottom: 10px;
+}
+
+.FP_Linea {
+  width: 60px;
+  height: 4px;
+  background-color: #b6a95d;
+  margin-bottom: 15px;
+}
+
+.FP_Hero_Texto p {
+  font-family: 'Barlow', sans-serif;
+  font-size: 110%;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Métodos de pago */
+#FP_Metodos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 60px 80px;
+  background-color: white;
+}
+
+.FP_Card {
+  background: white;
+  border-radius: 15px;
+  padding: 35px 25px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.FP_Card:hover {
+  transform: translateY(-8px);
+}
+
+.FP_Card i {
+  font-size: 55px;
+  color: #2F8F9D;
+  margin-bottom: 15px;
+}
+
+.FP_Card h3 {
+  font-family: 'Barlow', sans-serif;
+  font-size: 110%;
+  font-weight: bold;
+  color: #2F8F9D;
+  margin-bottom: 10px;
+}
+
+.FP_Card p {
+  font-family: 'Barlow', sans-serif;
+  font-size: 95%;
+  color: #777;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.FP_Btn {
+  background-color: #b6a95d;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.FP_Btn:hover {
+  background-color: #b6a95d;
+}
+
+.FP_Logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.FP_Visa {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1a1f71;
+  font-family: 'Barlow', sans-serif;
+}
+
+.FP_Master {
+  font-size: 35px;
+  color: #eb001b;
+}
+
+.FP_Bancos {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.FP_BCP {
+  font-weight: bold;
+  color: #f97316;
+  font-family: 'Barlow', sans-serif;
+}
+
+.FP_Interbank {
+  font-weight: bold;
+  color: #0066cc;
+  font-family: 'Barlow', sans-serif;
+}
+
+/* Cómo comprar */
+#FP_ComoComprar {
+  padding: 60px 80px;
+  background-color: #fdf9e6;
+  text-align: center;
+}
+
+#FP_ComoComprar h2 {
+  font-family: 'Barlow', sans-serif;
+  font-size: 200%;
+  font-weight: bold;
+  color: #2F8F9D;
+  margin-bottom: 50px;
+}
+
+.FP_Pasos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.FP_Paso {
+  text-align: center;
+  width: 180px;
+  position: relative;
+}
+
+.FP_Numero {
+  background-color: #b6a95d;
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0 auto 15px auto;
+}
+
+.FP_Paso i {
+  font-size: 45px;
+  color: #2F8F9D;
+  margin-bottom: 15px;
+}
+
+.FP_Paso h4 {
+  font-family: 'Barlow', sans-serif;
+  font-size: 95%;
+  font-weight: bold;
+  color: #2F8F9D;
+  margin-bottom: 8px;
+}
+
+.FP_Paso p {
+  font-family: 'Barlow', sans-serif;
+  font-size: 90%;
+  color: #777;
+  line-height: 1.5;
+}
+
+.FP_Linea_Paso {
+  width: 50px;
+  height: 3px;
+  background-color: #b6a95d;
+  border-radius: 5px;
+}
+
+/* Banner inferior */
+#FP_Banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 80px;
+  background-color: #adcfd3;
+  gap: 20px;
+}
+
+.FP_Banner_Texto {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.FP_Banner_Texto i {
+  font-size: 35px;
+  color: #2F8F9D;
+}
+
+.FP_Banner_Texto p {
+  font-family: 'Barlow', sans-serif;
+  font-size: 105%;
+  color: #333;
+}
+
+.FP_Btn_Tienda {
+  background-color: #b6a95d;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+}
+
+.FP_Btn_Tienda:hover {
+  background-color: #b6a95d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #FP_Hero {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  #FP_Metodos {
+    padding: 40px 20px;
+  }
+
+  .FP_Card {
+    width: 90%;
+  }
+
+  #FP_ComoComprar {
+    padding: 40px 20px;
+  }
+
+  .FP_Pasos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .FP_Linea_Paso {
+    width: 3px;
+    height: 30px;
+  }
+
+  #FP_Banner {
+    flex-direction: column;
+    padding: 25px 20px;
+    text-align: center;
+  }
+}

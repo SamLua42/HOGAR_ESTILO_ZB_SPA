@@ -1,0 +1,236 @@
+/* == NOSOTROS ========================== */
+#Nosotros_Hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+  background-color: #fdf9e6;
+  gap: 40px;
+}
+
+.Nosotros_Texto {
+  width: 45%;
+}
+
+.Nosotros_Sub {
+  color: #e0cf6e;
+   font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+#Nosotros_Hero h1 {
+   font-family: 'Barlow', sans-serif;
+  font-size: 300%;
+  font-weight: bold;
+  color: #2F8F9D;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.Nosotros_Desc {
+  font-family: 'Barlow', sans-serif;
+  font-size: 105%;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.Btn_Conocenos {
+  background-color: #b6a95d;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Btn_Conocenos:hover {
+  background-color: #b6a95d;
+}
+
+.Nosotros_Imagen {
+  width: 50%;
+}
+
+.Nosotros_Imagen img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* Por qué elegirnos */
+#Por_Que {
+  padding: 60px 80px;
+  text-align: center;
+  background-color: white;
+}
+
+#Por_Que h2 {
+  font-family: 'Barlow', sans-serif;
+  font-size: 200%;
+  font-weight: bold;
+  color: #2F8F9D;
+  margin-bottom: 10px;
+}
+
+#Por_Que h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #b6a95d;
+  margin: 10px auto 40px auto;
+}
+
+.Razones {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.Razon {
+  width: 220px;
+  text-align: center;
+}
+
+.Razon i {
+  font-size: 50px;
+  color: #2F8F9D;
+  margin-bottom: 15px;
+}
+
+.Razon h4 {
+  font-family: 'Barlow', sans-serif;
+  font-size: 90%;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.Razon p {
+  font-family: 'Barlow', sans-serif;
+  font-size: 95%;
+  color: #777;
+  line-height: 1.6;
+}
+
+/* Nuestra Historia */
+#nuestra-historia {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 80px;
+  background-color: #fdf9e6;
+}
+
+.Historia_Card {
+  background: white;
+  border-radius: 15px;
+  padding: 35px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.Historia_Card:hover {
+  transform: translateY(-8px);
+}
+
+.Historia_Card h2 {
+  font-family: 'Barlow', sans-serif;
+  font-size: 130%;
+  font-weight: bold;
+  color: #2F8F9D;
+  margin-bottom: 15px;
+}
+
+.Historia_Card p {
+  font-family: 'Barlow', sans-serif;
+  font-size: 100%;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* Banner Inferior */
+#Banner_Inferior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 80px;
+  background-color: #adcfd3;
+  gap: 20px;
+}
+
+.Banner_Inf_Texto {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.Banner_Inf_Texto i {
+  font-size: 35px;
+  color: #2F8F9D;
+}
+
+.Banner_Inf_Texto p {
+  font-family: 'Barlow', sans-serif;
+  font-size: 105%;
+  color: #333;
+}
+
+.Btn_VerTienda {
+  background-color: #2F8F9D;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+}
+
+.Btn_VerTienda:hover {
+  background-color: #b6a95d;
+}
+
+/* Responsive Nosotros */
+@media (max-width: 768px) {
+  #Nosotros_Hero {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .Nosotros_Texto, .Nosotros_Imagen {
+    width: 100%;
+  }
+
+  #Por_Que {
+    padding: 40px 20px;
+  }
+
+  #nuestra-historia {
+    padding: 40px 20px;
+  }
+
+  .Historia_Card {
+    width: 100%;
+  }
+
+  #Banner_Inferior {
+    flex-direction: column;
+    padding: 25px 20px;
+    text-align: center;
+  }
+}

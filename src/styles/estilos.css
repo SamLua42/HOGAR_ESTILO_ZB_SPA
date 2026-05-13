@@ -1,0 +1,951 @@
+/* == EN GENERAL DE LA PAGINA ============================================================================== */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+/* == FINAL DE GENERAL DE LA PAGINA ======================================================================= */
+
+
+/* == E.S. BODY =========================================================================================== */
+    .marquee{                                                   /* == CONTAINER MARQUEE =================== */
+        overflow: hidden;         
+        white-space: nowrap;       
+        background: black;       
+        color: white;  
+        font-family: 'Poppins', sans-serif;            
+        font-weight: bold;
+        text-align: center;
+        font-size: 20px;
+        word-spacing: 10px;
+        width: 100%;
+        padding: 12px 0px;
+
+    }
+
+    .marquee p{                                                   /* == MARQUEE EN PARRAFO ================ */
+        display: inline-block;                
+        animation: mover 10s linear infinite; 
+        text-align: center;
+    }
+
+    @keyframes mover{                                            /* == MOVIMIENTOS LINEAL ================= */
+        from {
+            transform: translateX(100%);                                     /* empieza fuera, a la derecha */
+        }
+        to {
+            transform: translateX(-100%);                                  /* termina fuera, a la izquierda */
+        }
+    }
+
+
+/* == E.S. NAV =========================================================================================== */                                                          
+    #Logo_Header{                                           /* -- Section Barra Buscador -------------- */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #2F8F9D!important;
+        padding: 25px 50px 20px 50px;   
+    }
+
+    .Logo1 img{                                                                          /*  Logo1 imagen  */
+        width: 170px;
+        height: auto;
+        text-align: left; 
+        padding: 0%;
+        margin-bottom: 10px;
+    }
+
+    .Barra_Busquedad {
+        width: 50%;
+    }
+
+    .Buscador{                                                                /*  Buscador Imput  */
+        display: flex;
+        align-items: center;
+        background: white;
+        border-radius: 25px;
+        padding: 8px 15px;
+        gap: 10px;
+        width: 600px;
+    }
+
+    .Buscador input {
+        border: none;
+        outline: none;
+        width: 100%;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .Buscador i {
+        color: #888;
+        font-size: 18px;
+    }
+
+    .Envios_Compras{
+        display: flex;
+        gap: 25px; /* espacio entre iconos */
+        align-items: center;
+    }
+
+    .Envios_1 i {
+        font-size: 45px;
+        color: white;
+        cursor: pointer;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+    }
+
+    .Compras_1 i {
+        font-size: 45px;
+        color: white;
+        cursor: pointer;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+    }
+
+    #Barra_Navegador {                                         /* -- Section Barra Navegador -------------- */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 10px 190px 10px 190px;   
+    }
+
+    nav{                                                       /* == CONTAINER NAV ======================= */                                       
+        display: block;
+        font-family: 'Barlow', sans-serif;
+        flex: 1;
+    }
+
+    .Navegador {                                                                            /*  Navegador  */
+        width: 100%;
+        list-style: none;        /* quita las viñetas */
+        margin: 0px;
+        padding: 0px;
+        display: flex;           /* coloca los elementos en línea horizontal */
+        justify-content: center; /* opcional: centra toda la lista */
+        background-color: white;
+    }
+
+    .Navegador li {                                                                      /*  Navegador li  */
+        width: 25%;
+        margin: 0px 0px; 
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .Navegador a {                                                                        /*  Navegador a  */
+        text-decoration: none;   /* quita el subrayado */
+        color: black;
+        font-weight: bold;
+        transition: color 0.8s;  /* animación suave */
+    }
+
+    .Navegador a:hover {                                                              /*  Navegador hover  */
+        width: 18%;
+        color: #90D1CA;
+    }
+
+    .Redes1 {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .Redes1 img{                                                                         /*  Redes imagen  */
+        width: 35px;
+        height: 35px;
+        object-fit: cover; 
+    }
+        
+    .Redes1 a{                                                                             /*  Redes link  */
+        text-decoration: none;
+    }
+
+    .Redes1 a:hover i {
+        color: #90D1CA;
+    }
+/* == E.S. NAV FINAL ===================================================================================== */
+
+
+/* == E.S. MAIN ========================================================================================== */
+    main{
+        display: block;
+        font-family: 'Barlow', sans-serif;
+    }          
+     
+    .Banner{
+        width:100%;
+        height: 800px !important;
+        overflow:hidden;
+    }
+
+    .Banner img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+    }
+
+    .Tiempo{
+        background: black!important;
+        color:white;
+        padding:10px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+
+    .Tiempo p {
+        font-family: 'Poppins', sans-serif !important;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    #Ventajas{                                /* -- Sección Características1 --------------------- */
+        display: flex;
+        justify-content: space-around;
+        margin: 40px 30px 40px 30px;
+        padding: 25px 0px 35px 0px;
+    }
+
+    .icono-circular{
+        width: 90px;              /* tamaño del círculo */
+        height: 90px;
+        background-color: #64CCC5; /* color de fondo del círculo */
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;   /* centra la imagen horizontalmente */
+        align-items: center;       /* centra la imagen verticalmente */
+        overflow: hidden;
+        margin: 30px 30px 30px 30px;
+    }
+
+    .icono-circular img{
+        width: auto;                /* ajusta tamaño del logo dentro del círculo */
+        height: 60%;
+    }
+
+    .Ventaja1 h4{
+        text-align: center;
+        font-weight: bold;
+        font-size: 25px;
+        font-family: 'Barlow', sans-serif;
+    }
+
+    .Ventaja1 p{
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Barlow', sans-serif;
+    }    
+
+    .Ventaja2 h4{
+        text-align: center;
+        font-weight: bold;
+        font-size: 25px;
+        font-family: 'Barlow', sans-serif;
+    }
+
+    .Ventaja2 p{
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Barlow', sans-serif;
+    }
+
+    .Ventaja3 h4{
+        text-align: center;
+        font-weight: bold;
+        font-size: 25px;
+        font-family: 'Barlow', sans-serif;
+    }
+
+    .Ventaja3 p{
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Barlow', sans-serif;
+    }
+    
+    .Ventaja4 h4{
+        text-align: center;
+        font-weight: bold;
+        font-size: 25px;
+        font-family: 'Barlow', sans-serif;
+    }
+
+    .Ventaja4 p{
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Barlow', sans-serif;
+    }
+
+    #ProductosOfertas {
+        background-color: #adcfd3;
+        padding: 50px 20px 70px 20px;
+        margin: 50px 0px 50px 0px;
+    }
+    
+    #ProductosOfertas h2{
+        font-family: 'Barlow', sans-serif !important; /* o la fuente que prefieras */
+        font-size: 250%;                  /* tamaño más grande */
+        color: #000000 !important;                     /* celeste */
+        font-weight: bold;
+        text-transform: uppercase;          /* mayúsculas */
+        letter-spacing: 0.5px;                /* espacio entre letras */
+        padding: 10px 0px 40px 0px;                /* separación del contenido */
+        text-align: center;
+
+    }
+
+    .Carrusel_Ofertas {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 15px;
+    }
+
+    .Carrusel_Ofertas > button {
+        background: none;
+        border: none;
+        border-radius: 50%;
+        color:white;
+        width: 50px;
+        height: 50px;
+        font-size: 45px;
+        cursor: pointer;
+    }
+
+    .Carrusel_Ofertas > button:hover {
+        background-color: #2F8F9D;
+        color: white;
+        border-color: #2F8F9D;
+    }
+
+    .Cards {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .Card_Ofer {
+        background: white;
+        border-radius: 10px;
+        padding: 15px;
+        text-align: center;
+        width: 320px;
+    }
+
+    .Card_Ofer img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .Card_Ofer h5 {
+        font-family: 'Barlow', sans-serif;
+        font-size: 120%;
+        font-weight: 500;
+        color: #333;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    .Card_Ofer .precio {
+        font-family: 'Barlow', sans-serif;
+        color: red;
+        font-weight: bold;
+        font-size: 120%;
+        margin-bottom: 10px;
+    }
+
+    .Comprar {
+        font-family: 'Barlow', sans-serif !important;
+        background-color: #90D1CA;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+
+    .Comprar:hover {
+        background-color: #2F8F9D;
+    }
+    
+    #Rells{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px 20px 100px 20px;
+        background-color: white;
+    }
+
+    #Reels h3{
+        font-family: 'Barlow', sans-serif !important; /* o la fuente que prefieras */
+        font-size: 250%;                  /* tamaño más grande */
+        color: #000000 !important;                     /* celeste */
+        font-weight: bold;
+        text-transform: uppercase;          /* mayúsculas */
+        letter-spacing: 0.5px;                /* espacio entre letras */
+        margin:100px 0px 70px 0px;
+        text-align: center;
+    }
+
+    .Card_Rells {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 100%;
+        padding: 30px 0px 80px 0px;
+}
+
+    .Card_Rells iframe {
+        width: 300px;
+        height: 476px;
+        border-radius: 12px;           /* esquinas redondeadas */
+        box-shadow: 0 4px 15px rgba(53, 59, 59, 0.267); /* sombra suave */
+        transition: transform 0.5s ease, box-shadow 0.3s ease; /* animación */
+    }
+
+    .Card_Rells iframe:hover {
+        transform: scale(1.03);        /* leve aumento al pasar el cursor */
+        box-shadow: 0 8px 25px rgba(224, 147, 3, 0.3); /* sombra más intensa */
+    }
+
+    .bg-reels{
+        background-color: #64b4b9;
+        padding: 15px 30px 20px 30px;
+        margin: 80px 0px 80px 0px; /* celeste suave */       
+    }
+
+    .btn-primary {
+        background-color: #64CCC5 !important; /* color de fondo */
+        border-color: #64CCC5!important;    /* borde del mismo color */
+        color: white !important;              /* color del texto */
+    }
+
+    .btn-primary:hover {
+        background-color: #58192c !important; /* color al pasar el mouse */
+        border-color: #58192c!important;
+    }
+
+    #Comentarios {
+        background-color: #adcfd3;
+        padding: 70px 0px 80px 0px;
+    }
+    
+    .Titulo_Comentarios{
+        font-family: 'Barlow', sans-serif !important; /* o la fuente que prefieras */
+        font-size: 170%;                  /* tamaño más grande */
+        color:#000000 !important;                     /* celeste */
+        font-weight: bold;
+        text-transform: uppercase;          /* mayúsculas */
+        letter-spacing: 0.5px;                /* espacio entre letras */
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .Cards_Comentarios {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .Cometario_C {
+        background: white;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        width: 420px;
+        height: 150px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    .Cometario_C h5 {
+        font-family: 'Barlow', sans-serif;
+        font-size: 125%;
+        font-weight: 700;
+        margin-bottom: 5px;
+        color: #333;
+    }
+
+    .Cometario_C h6 {
+        color: #2F8F9D!important;
+        font-size: 90%;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        font-family: 'Barlow', sans-serif !important;
+    }
+
+    .Cometario_C p {
+        font-family: 'Barlow', sans-serif;
+        font-size: 100%;
+        color: #555;
+        line-height: 1.6;
+    }
+
+    #Beneficios {  
+        display: flex;
+        justify-content: space-evenly;
+        margin: 30px 0px 30px 30px;                           /* -- Sección Características2 --------------------- */
+    }
+
+    .Pago {
+        display: flex;
+        align-items: center;
+     
+    }
+
+    .Pago img{                                                                   /*  Pago imagen  */
+        width: auto;                /* ajusta tamaño del logo dentro del círculo */
+        height: 40%;
+        margin: 0px 6px 0px 0px;
+    }
+
+    .Pago h4{
+        font-size: 20px;
+        justify-content: center;
+        margin: 0px 0px 0px 6px; 
+        font-family: 'Barlow', sans-serif !important;
+        color: #44444E;
+    }
+
+    .Envios {
+        display: flex;
+        align-items: center;
+       
+    }
+
+    .Envios img{                                                                          /*  Envios2 imagen  */
+        width: auto;                /* ajusta tamaño del logo dentro del círculo */
+        height: 40%;
+        margin: 0px 6px 0px 0px;
+    }
+
+    .Envios h4{
+        font-size: 20px;
+        justify-content: center;
+        color: #44444E;
+        margin: 0px 0px 0px 6px; 
+        font-family: 'Barlow', sans-serif !important;        
+    }
+
+    .Combo {
+        display: flex;
+        align-items: center;
+    }
+
+    .Combo img{                                                                         /*  Ofertas imagen  */
+        width: auto;                /* ajusta tamaño del logo dentro del círculo */
+        height: 40%;
+        margin: 0px 6px 0px 0px;
+    }
+
+    .Combo h4{
+        font-size: 20px;
+        color: #44444E;
+        justify-content: center;
+        margin: 0px 0px 0px 6px;
+        font-family: 'Barlow', sans-serif !important;          
+    }
+/* == E.S. MAIN FINAL ==================================================================================== */
+/* == E.S. BODY FINAL ==================================================================================== */
+
+
+/* == E.S. FOOTER ======================================================================================== */
+    #Pie1{                                                     /* -- Sección Pie 1 ----------------------- */
+        display: flex;
+        justify-content: space-around;
+        align-items:flex-start;
+        text-align: left;
+        padding: 50px 50px 40px 50px;
+        background-color: black;
+    }
+
+    .Logo2{                                                                                     /*  Logo2  */
+        display: flex;
+        flex-direction: column; /* imagen arriba, texto abajo */
+        align-items: flex-start;    /* centra horizontalmente */
+        width: 220px;
+    }
+
+    .Logo2 img{                                                                           /*  Logo2 imagen */
+        width: 150px;
+        height: auto;
+        margin: 30px 0px 0px 40px;
+        text-align: center;
+    }
+      
+    .Pie-Texto-Logo p {
+        color: white;
+        font-size: 14px;
+        line-height: 2;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .SobreNosotros{                                                                    /*  Sobre Nosotros  */
+        margin: 0px 20px 0px 20px;
+    }
+
+    .SobreNosotros h5{
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        line-height: 2;
+        margin-bottom: 15px;
+    }
+
+    .SobreNosotros ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .SobreNosotros a{
+        color: white;
+        font-size: 15px;
+        letter-spacing: 0.3px;
+        line-height: 2.5;
+        text-decoration: none;
+    }
+
+    .Pagos-Envios {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 0px 20px 0px 20px;
+    }
+
+    .Pagos {
+        margin: 0px 20px;
+    }
+
+    .Pagos h5 {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        line-height: 2;
+
+    }
+
+    .Pagos ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .Pagos li {
+        color: white;
+        font-size: 15px;
+        letter-spacing: 0.3px;
+        line-height: 2.5;
+    }
+
+    .Envios2 {
+        margin: 50px 20px;
+    }
+
+    .Envios2 h5 {
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        line-height: 2;
+
+    }
+
+    .Envios2 ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .Envios2 li {
+        color: white;
+        font-size: 15px;
+        letter-spacing: 0.3px;
+        line-height: 2.5;
+        text-align: left;
+    }
+
+    .Ayuda{                                                                          /*  Ayuda al Cliente  */
+        margin: 0px 20px 0px 20px;
+    }
+
+    .Ayuda h5{
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        line-height: 2;
+        margin-bottom: 15px;
+    }
+
+    .Ayuda ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .Ayuda a{
+        color: white;
+        font-size: 15px;
+        letter-spacing: 0.3px;
+        line-height: 2.5;
+        text-decoration: none;
+    }
+
+    li:hover{
+        transform: translateX(8px)
+    }
+
+    a:hover{
+        color: #5ad6df;
+    }
+
+    .Redes2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+        gap: 15px; /* espacio entre iconos */
+        justify-content: center; /* centra horizontalmente */
+        align-content: center;   /* centra verticalmente */
+        height: 100%;
+        margin-top: 100px;
+    }
+
+    .Redes2 img{                                                                        /*  Redes2 imagen  */                                                   
+        width: 90px;
+        height: 90px;
+        text-decoration: none;
+        filter: invert(100%);
+        margin: auto;
+        transition: filter 0.3s ease, transform 0.3s ease;
+    }
+
+    .Redes2 img:hover{  
+        filter: invert(70%) sepia(100%) saturate(200%) hue-rotate(180deg);
+        transform: scale(1.1);                                                                /*  Redes2 hover  */
+    }
+
+    #Pie2{              
+        background-color: black;                                     /* -- Sección Pie 2 ------------------------- */                                            
+        text-align: center;
+        padding: 30px 50px 30px 50px;        
+    }
+
+    #Pie2 h4{                                                                          /*  Texto Copyright */                                                        
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .FinalCentro {
+         text-align: center;
+    }
+/* == E.S. FINAL FOOTER ================================================================================== */
+
+
+/* == RESPONSIVE ========================================================================================== */
+
+/* -- TABLET (768px o menos) ------------------------------------------------------------------------------ */
+@media (max-width: 768px) {
+
+  /* Header */
+  #Logo_Header {
+    flex-direction: column;
+    padding: 15px 20px;
+    gap: 15px;
+  }
+
+  .Barra_Busquedad {
+    width: 100%;
+  }
+
+  .Buscador {
+    width: 100%;
+  }
+
+  /* Navbar */
+  #Barra_Navegador {
+    flex-direction: column;
+    padding: 10px 20px;
+    gap: 10px;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .Navegador {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .Navegador li {
+    width: auto;
+    margin: 5px 10px;
+    white-space: nowrap;
+  }
+
+  /* Banner */
+  .Banner {
+    height: 400px !important;
+  }
+
+  /* Ventajas */
+  #Ventajas {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  /* Ofertas */
+  .Cards {
+    flex-wrap: wrap;
+  }
+
+  .Card_Ofer {
+    width: 280px;
+  }
+
+  /* Reels */
+  .Card_Rells {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Comentarios */
+  .Cards_Comentarios {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Cometario_C {
+    width: 90%;
+    height: auto;
+  }
+
+  /* Beneficios */
+  #Beneficios {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+  }
+
+  /* Footer */
+  #Pie1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .Logo2 {
+    align-items: center;
+  }
+
+  .Logo2 img {
+    margin: 0px;
+  }
+
+  .SobreNosotros {
+    text-align: center;
+  }
+
+  .Pagos-Envios {
+    text-align: center;
+  }
+
+  .Ayuda {
+    text-align: center;
+  }
+
+  .Redes2 {
+    margin-top: 20px;
+  }
+}
+
+/* -- CELULAR (480px o menos) ----------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+
+  /* Marquee */
+  .marquee {
+    font-size: 15px;
+  }
+
+  /* Header */
+  .Logo1 img {
+    width: 120px;
+  }
+
+  .Envios_1 i, .Compras_1 i {
+    font-size: 30px;
+  }
+
+  /* Banner */
+  .Banner {
+    height: 250px !important;
+  }
+
+  /* Ventajas */
+  .icono-circular {
+    width: 70px;
+    height: 70px;
+    margin: 15px;
+  }
+
+  /* Ofertas */
+  .Card_Ofer {
+    width: 90%;
+  }
+
+  .Card_Ofer img {
+    height: 250px;
+  }
+
+  /* Reels */
+  .Card_Rells iframe {
+    width: 100%;
+    height: 350px;
+  }
+
+  /* Comentarios */
+  .Cometario_C {
+    width: 95%;
+  }
+
+  /* Footer */
+  .Logo2 img {
+    width: 120px;
+  }
+
+  .Pie-Texto-Logo p {
+    font-size: 12px;
+  }
+
+  .Redes2 img {
+    width: 60px;
+    height: 60px;
+  }
+
+  #Pie2 h4 {
+    font-size: 12px;
+  }
+}
